@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC26 Batch - Official Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .logo {
+            font-size: 4em;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .contact {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .contact a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🎓</div>
+        <h1>SSC26 Batch</h1>
+        <p>Welcome to our official website!</p>
+        <p>This site is under construction and will be updated soon.</p>
+        <p>Stay tuned for more information about our batch.</p>
+        
+        <div class="contact">
+            <p>📧 Contact: ssc26batch@example.com</p>
+            <p>📍 Website: sec26-batch.netlify.app</p>
+        </div>
+    </div>
+    
+    <script>
+        // Simple greeting based on time of day
+        const hour = new Date().getHours();
+        let greeting;
+        
+        if (hour < 12) {
+            greeting = "Good Morning!";
+        } else if (hour < 18) {
+            greeting = "Good Afternoon!";
+        } else {
+            greeting = "Good Evening!";
+        }
+        
+        // Add greeting to page after 1 second
+        setTimeout(() => {
+            const greetingElement = document.createElement('p');
+            greetingElement.innerHTML = `<strong>${greeting}</strong>`;
+            greetingElement.style.marginTop = '20px';
+            greetingElement.style.color = '#ffd700';
+            document.querySelector('.container').insertBefore(greetingElement, document.querySelector('.contact'));
+        }, 1000);
+    </script>
+</body>
+</html>
